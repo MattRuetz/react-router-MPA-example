@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import Contact from './pages/Contact';
 import About from './pages/About';
 import Article from './pages/Article';
+import NotFound from './pages/NotFound';
 
 function App() {
     return (
@@ -26,7 +27,7 @@ function App() {
                     <Route path="/about" element={<About />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/articles/:id" element={<Article />}></Route>
-                    <Route path="/*" element={<h1>404: NOT FOUND!</h1>} />
+                    <Route path="*" element={<NotFound />} />
                 </Routes>
             </Router>
         </div>
