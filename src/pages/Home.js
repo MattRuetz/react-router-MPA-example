@@ -17,7 +17,7 @@ function Home() {
             {error && <div>{error}</div>}
             {articles &&
                 articles.map((article) => (
-                    <div id={article.id} className="card">
+                    <div key={article.id} className="card">
                         <h3>{article.title}</h3>
                         <p>{article.author}</p>
 
